@@ -63,8 +63,7 @@ input[type="button"]{
     width: 92%;
     height: 2.7em;
     border-top: none;
-    border: 2px solid dimgray;
-    
+    border: 2px solid dimgray;   
 }
 
 input[type="button"]:hover{   
@@ -151,5 +150,20 @@ input[type="text"]::placeholder{
         width: 92%;
     }
 
+    input[type="button"]:hover{   
+        border-top: none;
+        color: #ffffff;
+        background-color: dodgerblue;
+        border: 2px solid dimgray;
+    }
+
+    input[type="text"]{    
+        width: 80%;
+        height: 2.3em;
+        border-top: 0;
+        padding-left: 10px;
+        border: 2px solid dimgray;
+        border-style: none none solid none;
+    }
   }
 /*--x----- MEDIA QUERY WITH MAXIMUM WIDTH OF 600PX -----x--*/
