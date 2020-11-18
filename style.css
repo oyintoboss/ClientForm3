@@ -1,0 +1,151 @@
+/*-------- CSS VARIABLE LINK --------*/
+@import url("css__variable.css");
+/*-------- CSS VARIABLE LINK --------*/
+
+/*-------- GLOBAL CSS --------*/
+body{
+    background-color: dimgray;
+    color: #ffffff;
+}
+
+.asterik{
+    color: red;
+}
+
+.container{
+    max-width: 50em;
+    margin-top: 8em;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    grid-gap: .5em;
+    padding: 0 4em;
+    border: 1px solid dodgerblue;
+}
+
+.title{
+    grid-area: 1/1/2/3;
+}
+
+.form__input{
+    grid-area: 2/1/3/3;
+    display: grid;      
+    margin-left: 3em;
+    /* grid-template-columns: 1fr;
+    grid-gap: .4em;
+    justify-content: center; */
+}
+
+.form__input label{
+    display: block;
+    margin-bottom: .1em;
+}
+
+.website{
+    grid-area: 1/2/2/3;
+}
+
+
+
+.btn__submit{
+    grid-area: 5/1/6/3;
+}
+
+input[type="text"]{    
+    width: 80%;
+    height: 2.3em;
+    border-top: none;
+    border: 2px solid dimgray;
+}
+
+input[type="button"]{    
+    width: 90.5%;
+    height: 2.7em;
+    border-top: none;
+    border: 2px solid dimgray;
+}
+
+input[type="button"]:hover{   
+    border-top: none;
+    color: #ffffff;
+    background-color: dodgerblue;
+    border: 2px solid dimgray;
+}
+
+input[type="text"]:focus{    
+    background-color: lightgray;
+    border: 2px solid dodgerblue;
+}
+
+input[type="text"]::placeholder{    
+    color: black;
+    font-weight: bold;
+}
+/*--x----- GLOBAL CSS -----x--*/
+
+/*-------- MEDIA QUERY WITH MAXIMUM WIDTH OF 600PX --------*/
+@media (max-width: 600px) {
+    .container{
+      padding: 1em;
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      grid-gap: .1em;
+      margin-top: 0;
+      margin-left: 1em;
+      margin-right: 1em;      
+    }
+
+    .title{
+        grid-area: 1/1/2/2;
+    }
+
+    .form__input{
+        grid-area: 2/1/3/2;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin-left: 2.9em;
+    }
+
+    .company__name{
+        grid-area: 1/1/2/3;
+    }
+
+    .website{
+        grid-area: 2/1/3/3;
+    }
+
+    .address{
+        grid-area: 3/1/4/3;
+    }
+
+    .city{
+        grid-area: 4/1/5/3;
+    }
+
+    .state{
+        grid-area: 5/1/6/3;
+    }
+
+    .postalcode{
+        grid-area: 6/1/7/3;
+    }
+
+    .country{
+        grid-area: 7/1/8/3;
+    }
+
+    .fullname{
+        grid-area: 8/1/9/3;
+    }
+
+    .btn__submit{
+        grid-area: 9/1/10/3;
+        width: 90%;
+    }
+
+  }
+/*--x----- MEDIA QUERY WITH MAXIMUM WIDTH OF 600PX -----x--*/
