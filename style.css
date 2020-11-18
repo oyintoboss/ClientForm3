@@ -53,9 +53,10 @@ body{
 input[type="text"]{    
     width: 80%;
     height: 2.3em;
-    border-top: none;
+    border-top: 0;
     padding-left: 10px;
     border: 2px solid dimgray;
+    border-style: none none solid none;
 }
 
 input[type="button"]{    
@@ -63,6 +64,7 @@ input[type="button"]{
     height: 2.7em;
     border-top: none;
     border: 2px solid dimgray;
+    
 }
 
 input[type="button"]:hover{   
@@ -72,9 +74,14 @@ input[type="button"]:hover{
     border: 2px solid dimgray;
 }
 
-input[type="text"]:focus{    
-    /* background-color: lightgray; */
-    border: 2px solid dodgerblue;
+.fas{
+    font-size: .6em;
+}
+
+input[type="text"]:focus{     
+    border-style: none none solid none;  
+    /* border: 2px solid dodgerblue; */
+    border-bottom-color: dodgerblue;
 }
 
 input[type="text"]::placeholder{    
