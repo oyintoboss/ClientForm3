@@ -12,6 +12,10 @@ body{
     color: red;
 }
 
+h1{
+    color: black;
+}
+
 .container{
     max-width: 50em;
     margin-top: 4em;
