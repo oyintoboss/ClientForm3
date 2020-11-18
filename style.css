@@ -78,7 +78,7 @@ input[type="text"]:focus{
 }
 
 input[type="text"]::placeholder{    
-    color: black;    
+    color: lightgray;    
 }
 /*--x----- GLOBAL CSS -----x--*/
 
